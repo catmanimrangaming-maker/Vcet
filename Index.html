@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,6 @@
         .brand-border { border-left: 4px solid #0085CA; }
         .tech-grid { background-image: linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px); background-size: 24px 24px; }
         .hero-gradient { background: linear-gradient(135deg, #002B5E 0%, #005596 100%); }
-        .timeline-dot::before { content: ''; position: absolute; left: -25px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #0085CA; border: 2px solid white; }
     </style>
 </head>
 <body class="bg-vcet-ice text-vcet-slate font-sans antialiased">
@@ -51,25 +50,25 @@
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION -->
+    <!-- MAIN NAVIGATION (Updated to link to external pages) -->
     <nav class="bg-white text-vcet-dark shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="text-3xl font-black tracking-tighter text-vcet-dark">
+                <a href="index.html" class="text-3xl font-black tracking-tighter text-vcet-dark">
                     VC<span class="text-vcet-light">E</span>T <span class="text-lg font-normal tracking-widest uppercase text-vcet-brand ml-1">Asia</span>
-                </div>
+                </a>
             </div>
             <div class="hidden xl:flex space-x-6 text-xs font-bold uppercase tracking-wider text-vcet-brand">
-                <a href="#history" class="hover:text-vcet-light transition">History</a>
-                <a href="#process" class="hover:text-vcet-light transition">Workflow</a>
-                <a href="#capacities" class="hover:text-vcet-light transition">Machines</a>
-                <a href="#materials" class="hover:text-vcet-light transition">Materials & Tech</a>
-                <a href="#corporate" class="hover:text-vcet-light transition">Corporate & ESG</a>
+                <a href="history.html" class="hover:text-vcet-light transition">History</a>
+                <a href="workflow.html" class="hover:text-vcet-light transition">Workflow</a>
+                <a href="capacities.html" class="hover:text-vcet-light transition">Machines</a>
+                <a href="materials.html" class="hover:text-vcet-light transition">Materials & Tech</a>
+                <a href="corporate.html" class="hover:text-vcet-light transition">Corporate & ESG</a>
             </div>
             <div>
-                <button class="bg-vcet-light hover:bg-vcet-brand text-white px-6 py-2.5 text-sm font-bold uppercase tracking-wider rounded-sm transition-colors shadow-md">
+                <a href="contact.html" class="bg-vcet-light hover:bg-vcet-brand text-white px-6 py-2.5 text-sm font-bold uppercase tracking-wider rounded-sm transition-colors shadow-md inline-block">
                     Request Quote
-                </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -87,11 +86,11 @@
                     VCET Asia is your ONE STOP SOLUTION for high-precision mechanical parts, prototypes, unit parts, and series assemblies[span_5](start_span)[span_5](end_span). We bridge Swiss engineering quality with the manufacturing scale of Southeast Asia[span_6](start_span)[span_6](end_span).
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <!-- Updated Interactive Buttons -->
-                    <a href="#capacities" class="bg-vcet-light hover:bg-white hover:text-vcet-dark text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors shadow-lg inline-block">
+                    <!-- CHANGED: These now point to separate .html files -->
+                    <a href="capacities.html" class="bg-vcet-light hover:bg-white hover:text-vcet-dark text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors shadow-lg inline-block">
                         View Capacities
                     </a>
-                    <a href="#history" class="bg-transparent border border-blue-300 hover:bg-blue-800 text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors inline-block">
+                    <a href="history.html" class="bg-transparent border border-blue-300 hover:bg-blue-800 text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors inline-block">
                         Our History
                     </a>
                 </div>
@@ -123,314 +122,80 @@
         </div>
     </section>
 
-    <!-- COMPANY HISTORY & TIMELINE -->
-    <section id="history" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-3 gap-12">
-            <div class="lg:col-span-1">
-                <div class="brand-border pl-6 mb-6">
-                    <h2 class="text-3xl font-black text-vcet-dark uppercase">Our History</h2>
-                    <p class="text-vcet-brand font-medium mt-2">Two decades of continuous growth and technological advancement.</p>
-                </div>
-                <div class="bg-vcet-ice p-6 rounded border border-vcet-silver mt-8">
-                    <h4 class="font-bold text-vcet-dark mb-4 border-b border-vcet-silver pb-2">Facility Infrastructure[span_12](start_span)[span_12](end_span)</h4>
-                    <ul class="text-sm space-y-2 text-vcet-slate">
-                        <li><i class="fa-solid fa-check text-vcet-light mr-2"></i> Modern Reception & Admin Offices</li>
-                        <li><i class="fa-solid fa-check text-vcet-light mr-2"></i> Dedicated Conference Rooms</li>
-                        <li><i class="fa-solid fa-check text-vcet-light mr-2"></i> Specialized QC & Assembly Rooms</li>
-                        <li><i class="fa-solid fa-check text-vcet-light mr-2"></i> Optimized Logistics Zone</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="lg:col-span-2 border-l-2 border-vcet-silver pl-8 relative">
-                <div class="mb-8 relative timeline-dot">
-                    <h3 class="text-xl font-bold text-vcet-brand">2004 - 2010[span_13](start_span)[span_13](end_span)</h3>
-                    <p class="text-sm mt-1">Creation of the enterprise, establishment of the first VCET Asia office, setup of the Quality Control department, and commencement of mechanical subcontracting and assembly activities.</p>
-                </div>
-                <div class="mb-8 relative timeline-dot">
-                    <h3 class="text-xl font-bold text-vcet-brand">2011 - 2015[span_14](start_span)[span_14](end_span)</h3>
-                    <p class="text-sm mt-1">Setup of the Project Management team, QA/QC departments, Finance, and Logistics. Acquisition of the first MMV machine. Implementation of the first ERP system (March 1, 2014).</p>
-                </div>
-                <div class="mb-8 relative timeline-dot">
-                    <h3 class="text-xl font-bold text-vcet-brand">2016 - 2019[span_15](start_span)[span_15](end_span)</h3>
-                    <p class="text-sm mt-1">Upgrade of the ERP system to a modern cloud-based infrastructure for total operational integration.</p>
-                </div>
-                <div class="mb-8 relative timeline-dot">
-                    <h3 class="text-xl font-bold text-vcet-brand">2020 - 2024[span_16](start_span)[span_16](end_span)</h3>
-                    <p class="text-sm mt-1">Relocation to the new building. Expansion of QA capabilities with the purchase of advanced MMV and MMT (Coordinate Measuring) machines.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8-STEP PROCESS WORKFLOW -->
-    <section id="process" class="py-20 bg-vcet-ice tech-grid">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-vcet-dark uppercase">8-Step Operational Workflow[span_17](start_span)[span_17](end_span)</h2>
-                <p class="text-vcet-slate mt-2 max-w-2xl mx-auto">Fully integrated processes managed by our state-of-the-art Cloud ERP system.</p>
-            </div>
+    <!-- CORE SECTORS & MATERIALS OVERVIEW -->
+    <section class="py-20 bg-white border-t border-vcet-silver">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 border-t-4 border-vcet-light shadow-md">
-                    <div class="text-vcet-light font-black text-2xl mb-2">01. RFQ</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Client Request[span_18](start_span)[span_18](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Initial processing of the client's request for proposal.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-light shadow-md">
-                    <div class="text-vcet-light font-black text-2xl mb-2">02. Engineering</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Project Managers[span_19](start_span)[span_19](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">2D/3D drawing analysis, selection of appropriate partners, and advising on manufacturing optimization.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-light shadow-md">
-                    <div class="text-vcet-light font-black text-2xl mb-2">03. Quotation</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Client Offer[span_20](start_span)[span_20](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Thorough price evaluation and formal offer submission.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-light shadow-md">
-                    <div class="text-vcet-light font-black text-2xl mb-2">04. Order</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Planning[span_21](start_span)[span_21](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Documentation preparation, scheduling, and production tracking.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-brand shadow-md">
-                    <div class="text-vcet-brand font-black text-2xl mb-2">05. Incoming QC</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Entry Control[span_22](start_span)[span_22](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Goods receipt and real-time inventory updates.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-brand shadow-md">
-                    <div class="text-vcet-brand font-black text-2xl mb-2">06. Quality Control</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Inspection[span_23](start_span)[span_23](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Internal QC checks, custom jig design for inspection, and pre-assembly testing.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-brand shadow-md">
-                    <div class="text-vcet-brand font-black text-2xl mb-2">07. Assembly</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Execution[span_24](start_span)[span_24](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Jig design for assembly operations and final functionality testing.</p>
-                </div>
-                <div class="bg-white p-6 border-t-4 border-vcet-brand shadow-md">
-                    <div class="text-vcet-brand font-black text-2xl mb-2">08. Logistics</div>
-                    <h4 class="font-bold text-vcet-dark mb-2">Shipping[span_25](start_span)[span_25](end_span)</h4>
-                    <p class="text-xs text-vcet-slate">Appropriate packaging to protect goods, fully EPTA certified for transport optimization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MACHINERY CAPACITIES -->
-    <section id="capacities" class="py-20 bg-vcet-dark text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black uppercase text-white">Advanced Machinery Capacities[span_26](start_span)[span_26](end_span)</h2>
-                <p class="text-blue-200 mt-2">A network of over 20 partners providing access to over 600 advanced machines[span_27](start_span)[span_27](end_span).</p>
-            </div>
-
-            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="bg-white/10 border border-white/20 p-6 text-center rounded">
-                    <h3 class="text-4xl font-black text-vcet-light">222</h3>
-                    <p class="text-sm font-bold uppercase mt-2">CNC Milling[span_28](start_span)[span_28](end_span)</p>
-                    <p class="text-xs text-blue-200 mt-1">3-Axis, 4-Axis, 5-Axis</p>
-                </div>
-                <div class="bg-white/10 border border-white/20 p-6 text-center rounded">
-                    <h3 class="text-4xl font-black text-vcet-light">161</h3>
-                    <p class="text-sm font-bold uppercase mt-2">CNC Grinding[span_29](start_span)[span_29](end_span)</p>
-                    <p class="text-xs text-blue-200 mt-1">Cylindrical (up to 7-axis), Surface, Profile, Honing, Jig</p>
-                </div>
-                <div class="bg-white/10 border border-white/20 p-6 text-center rounded">
-                    <h3 class="text-4xl font-black text-vcet-light">126</h3>
-                    <p class="text-sm font-bold uppercase mt-2">CNC Turning[span_30](start_span)[span_30](end_span)</p>
-                    <p class="text-xs text-blue-200 mt-1">Manual, 4-Axis, 5+1 Axis, 7-Axis</p>
-                </div>
-                <div class="bg-white/10 border border-white/20 p-6 text-center rounded">
-                    <h3 class="text-4xl font-black text-vcet-light">60</h3>
-                    <p class="text-sm font-bold uppercase mt-2">Wire Cut[span_31](start_span)[span_31](end_span)</p>
-                    <p class="text-xs text-blue-200 mt-1">Wire EDM & Super Drill</p>
-                </div>
-                <div class="bg-white/10 border border-white/20 p-6 text-center rounded">
-                    <h3 class="text-4xl font-black text-vcet-light">55</h3>
-                    <p class="text-sm font-bold uppercase mt-2">Sink EDM[span_32](start_span)[span_32](end_span)</p>
-                    <p class="text-xs text-blue-200 mt-1">Plunge EDM</p>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <p class="text-sm text-blue-200">Equipped with internal Spectrom & Optronics MMV/MMT inspection technology[span_33](start_span)[span_33](end_span).</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- MATERIALS & TREATMENTS -->
-    <section id="materials" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+            <!-- Sectors -->
             <div>
-                <div class="brand-border pl-6 mb-8">
-                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Raw Materials[span_34](start_span)[span_34](end_span)</h2>
+                <div class="mb-8 brand-border pl-6">
+                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Industry Diversity[span_12](start_span)[span_12](end_span)</h2>
                 </div>
-                <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm bg-vcet-ice p-6 rounded border border-vcet-silver">
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Aluminum</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Bronze</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Stainless Steel</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Nylon / Cast Nylon</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Tool Steel</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Polyurethane (PU)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Mild Steel</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Silver Steel</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Delrin</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Teflon</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Peek</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Bearing Steel</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> POM</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Titanium Grade 5</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Brass</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> PET-P</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Carbide</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Cast Iron Gg 25</div>
-                    <div class="flex items-center"><i class="fa-solid fa-cube text-vcet-brand mr-2 text-xs"></i> Copper</div>
-                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-syringe text-vcet-light w-6"></i> MedTech</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">48.9%[span_13](start_span)[span_13](end_span)</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-clock text-vcet-light w-6"></i> Watchmaking</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">27.2%[span_14](start_span)[span_14](end_span)</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-robot text-vcet-light w-6"></i> Automation</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">12.0%[span_15](start_span)[span_15](end_span)</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-car text-vcet-light w-6"></i> Automotive</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">10.2%[span_16](start_span)[span_16](end_span)</span>
+                    </li>
+                </ul>
             </div>
 
+            <!-- Materials Quick List -->
             <div>
-                <div class="brand-border pl-6 mb-8">
-                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Treatments & Coatings[span_35](start_span)[span_35](end_span)</h2>
+                <div class="mb-8 brand-border pl-6">
+                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Material Capabilities[span_17](start_span)[span_17](end_span)</h2>
                 </div>
-                <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm bg-vcet-ice p-6 rounded border border-vcet-silver">
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Hardening</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Anodizing</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Electropolishing (EP)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Balinit D (CrN)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Hard Chrome</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Blackening</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Alodine 1200S</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Black Zinc</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> AlTiN Coating</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Black Chrome</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Zinc Coating</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> DLC Coating</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Bead/Sandblasting</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Balinit A (TiN)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Balinit B (TiCN)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Nitriding</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Passivation</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Painting</div>
-                    <div class="flex items-center"><i class="fa-solid fa-layer-group text-vcet-brand mr-2 text-xs"></i> Tenifer Black</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CORPORATE, DEMOGRAPHICS & ESG -->
-    <section id="corporate" class="py-20 bg-vcet-ice border-t border-vcet-silver">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-black text-vcet-dark uppercase">Corporate Structure & Ethics</h2>
-                <p class="text-vcet-slate mt-2">Committed to sustainability, community, and an inclusive workforce.</p>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Leadership & Partners -->
-                <div class="bg-white p-6 rounded shadow-sm border border-vcet-silver">
-                    <h3 class="text-lg font-bold text-vcet-brand border-b border-vcet-silver pb-2 mb-4">Leadership[span_36](start_span)[span_36](end_span)</h3>
-                    <ul class="text-sm space-y-3 mb-8">
-                        <li><strong>CEO / CFO:</strong> Regis Degen</li>
-                        <li><strong>COO / CTO:</strong> Cedric Bourquenez</li>
-                        <li><strong>General Manager:</strong> Wan Muhammad Yusuf / Wan Mohd Zani</li>
-                        <li><strong>Management Team:</strong> Michelle (Finance), Cindy (HR), Norashidah (Admin), Ahmad Tarmizi (QA/QC), Rahim Hasim (Logistics).</li>
-                    </ul>
-                    <h3 class="text-lg font-bold text-vcet-brand border-b border-vcet-silver pb-2 mb-4">University Partnerships[span_37](start_span)[span_37](end_span)</h3>
-                    <ul class="text-sm space-y-1">
-                        <li>• UTeM (Universiti Teknikal Malaysia Melaka)</li>
-                        <li>• UTM (Universiti Teknologi Malaysia)</li>
-                        <li>• UTHM (Universiti Tun Hussein Onn Malaysia)</li>
-                        <li>• MMU (Multimedia University)</li>
-                        <li>• University of Nottingham (UK/China/Malaysia)</li>
-                    </ul>
-                </div>
-
-                <!-- Demographics -->
-                <div class="bg-white p-6 rounded shadow-sm border border-vcet-silver">
-                    <h3 class="text-lg font-bold text-vcet-brand border-b border-vcet-silver pb-2 mb-4">Workforce Demographics[span_38](start_span)[span_38](end_span)</h3>
-                    <div class="flex justify-around items-center mb-8 bg-vcet-ice p-4 rounded">
-                        <div class="text-center">
-                            <i class="fa-solid fa-person text-3xl text-vcet-light mb-2"></i>
-                            <div class="text-2xl font-black text-vcet-dark">53%</div>
-                            <div class="text-xs uppercase font-bold text-vcet-slate">Men</div>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa-solid fa-person-dress text-3xl text-pink-500 mb-2"></i>
-                            <div class="text-2xl font-black text-vcet-dark">47%</div>
-                            <div class="text-xs uppercase font-bold text-vcet-slate">Women</div>
-                        </div>
-                    </div>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-xs mb-1"><span class="font-bold">Malay</span><span>45.2%</span></div>
-                            <div class="w-full bg-vcet-ice h-2"><div class="bg-vcet-dark h-2" style="width: 45.2%"></div></div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs mb-1"><span class="font-bold">Chinese</span><span>19.4%</span></div>
-                            <div class="w-full bg-vcet-ice h-2"><div class="bg-vcet-brand h-2" style="width: 19.4%"></div></div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs mb-1"><span class="font-bold">Indian</span><span>19.4%</span></div>
-                            <div class="w-full bg-vcet-ice h-2"><div class="bg-vcet-light h-2" style="width: 19.4%"></div></div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs mb-1"><span class="font-bold">Others</span><span>16.1%</span></div>
-                            <div class="w-full bg-vcet-ice h-2"><div class="bg-vcet-silver h-2" style="width: 16.1%"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ESG & Why VCET -->
-                <div class="bg-white p-6 rounded shadow-sm border border-vcet-silver flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-vcet-brand border-b border-vcet-silver pb-2 mb-4">Why VCET? (ESG & Value)[span_39](start_span)[span_39](end_span)</h3>
-                        <ul class="text-sm space-y-3">
-                            <li><i class="fa-solid fa-leaf text-green-600 w-5"></i> <strong>Sustainability:</strong> Carbon footprint measurement and annual reporting. Ecological packaging materials. Waste management programs.</li>
-                            <li><i class="fa-solid fa-hands-holding-child text-vcet-light w-5"></i> <strong>Community:</strong> Active engagement in charity projects and continuous professional training programs.</li>
-                            <li><i class="fa-solid fa-magnifying-glass-chart text-vcet-light w-5"></i> <strong>Quality:</strong> ISO certified supplier audits, material/treatment certificates, and internal QC/QA assembly testing.</li>
-                            <li><i class="fa-solid fa-coins text-vcet-light w-5"></i> <strong>Cost-Efficiency:</strong> Highly competitive pricing with EPTA certified logistics for transport optimization.</li>
-                        </ul>
+                <div class="bg-vcet-ice border border-vcet-silver p-6 rounded-md">
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-vcet-dark">
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Titanium Grade 5[span_18](start_span)[span_18](end_span)</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Stainless Steel[span_19](start_span)[span_19](end_span)</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Tool Steel[span_20](start_span)[span_20](end_span)</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Aluminum[span_21](start_span)[span_21](end_span)</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Carbide[span_22](start_span)[span_22](end_span)</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Peek / POM / Nylon[span_23](start_span)[span_23](end_span)</div>
+                        <div class="flex items-center pb-1"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Brass & Bronze[span_24](start_span)[span_24](end_span)</div>
+                        <div class="flex items-center pb-1"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Delrin / Teflon[span_25](start_span)[span_25](end_span)</div>
                     </div>
                 </div>
             </div>
-            
-            <div class="mt-8 grid grid-cols-2 md:grid-cols-6 gap-2 text-center text-xs font-bold text-vcet-slate uppercase">
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">MedTech (48.9%)[span_40](start_span)[span_40](end_span)</div>
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">Horology (27.2%)[span_41](start_span)[span_41](end_span)</div>
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">Automation (12%)[span_42](start_span)[span_42](end_span)</div>
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">Automotive (10.2%)[span_43](start_span)[span_43](end_span)</div>
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">Electronics (1.4%)[span_44](start_span)[span_44](end_span)</div>
-                <div class="bg-white p-3 border border-vcet-silver rounded shadow-sm">Aerospace (0.3%)[span_45](start_span)[span_45](end_span)</div>
-            </div>
+
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact" class="bg-vcet-dark text-blue-200 py-12 border-t-4 border-vcet-light">
+    <footer class="bg-vcet-dark text-blue-200 py-12 border-t-4 border-vcet-light">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
             <div>
                 <div class="text-2xl font-black tracking-tighter text-white mb-4">
                     VC<span class="text-vcet-light">E</span>T <span class="text-sm font-normal tracking-widest uppercase text-vcet-brand ml-1">Asia Sdn Bhd</span>
                 </div>
-                <p class="text-sm leading-relaxed">Your ONE STOP SOLUTION. Connecting Swiss precision engineering with highly efficient Malaysian manufacturing capacities[span_46](start_span)[span_46](end_span).</p>
+                <p class="text-sm leading-relaxed">Your ONE STOP SOLUTION. Connecting Swiss precision engineering with highly efficient Malaysian manufacturing capacities[span_26](start_span)[span_26](end_span).</p>
                 <p class="text-xs mt-6 text-vcet-brand">© 2004 - 2026 VCET ASIA SDN BHD. All rights reserved.</p>
             </div>
             
             <div>
-                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Headquarters[span_47](start_span)[span_47](end_span)</h4>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Headquarters[span_27](start_span)[span_27](end_span)</h4>
                 <address class="not-italic text-sm space-y-1">
                     <p>No 6 & 8, Jalan Tasik Utama 63</p>
                     <p>Kawasan Perindustrian Taman Tasik Utama</p>
                     <p>75450 Ayer Keroh, Malacca</p>
                     <p>Malaysia</p>
                 </address>
-                <div class="mt-4">
-                    <p class="text-xs text-vcet-brand uppercase font-bold">Global Export[span_48](start_span)[span_48](end_span)</p>
-                    <p class="text-xs">Europe (47.5%), Switzerland (44.8%), USA (6.0%), Asia (1.7%)</p>
-                </div>
             </div>
 
             <div>
-                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Direct Lines[span_49](start_span)[span_49](end_span)</h4>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Direct Lines[span_28](start_span)[span_28](end_span)</h4>
                 <ul class="text-sm space-y-3">
                     <li class="flex items-center"><span class="bg-vcet-brand text-white text-[10px] font-bold px-2 py-1 rounded-sm mr-3 w-16 text-center">GENERAL</span> <a href="mailto:info@vcetasia.com" class="hover:text-white transition">info@vcetasia.com</a></li>
                     <li class="flex items-center"><span class="bg-vcet-brand text-white text-[10px] font-bold px-2 py-1 rounded-sm mr-3 w-16 text-center">SALES</span> <a href="mailto:sales@vcetasia.com" class="hover:text-white transition">sales@vcetasia.com</a></li>
