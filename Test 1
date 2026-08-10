@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCET Asia | Precision Engineering</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vcet: {
+                            dark: '#002B5E',      /* Deep Navy from the "20" logo */
+                            brand: '#005596',     /* Mid Corporate Blue */
+                            light: '#0085CA',     /* Vibrant Azure from "VCET" text */
+                            ice: '#F0F4F8',       /* Subtle blue-tinted background */
+                            slate: '#334155',     /* Slate text for readability */
+                            silver: '#CBD5E1'     /* Soft structural borders */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica Neue', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brand-border {
+            border-left: 4px solid #0085CA;
+        }
+        .tech-grid {
+            background-image: linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #002B5E 0%, #005596 100%);
+        }
+    </style>
+</head>
+<body class="bg-vcet-ice text-vcet-slate font-sans antialiased">
+
+    <!-- TOP BAR -->
+    <div class="bg-vcet-dark text-blue-100 py-2 text-xs border-b border-vcet-brand">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span><i class="fa-solid fa-award mr-2 text-vcet-light"></i> Celebrating 20 Years of Excellence (2004 - 2024)</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-globe mr-2 text-vcet-light"></i> Swiss Quality Produced in Malaysia</span>
+            </div>
+            <div class="flex space-x-4 font-medium">
+                <a href="mailto:info@vcetasia.com" class="hover:text-white transition">info@vcetasia.com</a>
+                <span class="text-vcet-brand">|</span>
+                <a href="tel:+6062530592" class="hover:text-white transition">+60 6 2530592</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="bg-white text-vcet-dark shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="text-3xl font-black tracking-tighter text-vcet-dark">
+                    VC<span class="text-vcet-light">E</span>T <span class="text-lg font-normal tracking-widest uppercase text-vcet-brand ml-1">Asia</span>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="hidden lg:flex space-x-8 text-sm font-bold uppercase tracking-wider text-vcet-brand">
+                <a href="#about" class="hover:text-vcet-light transition">Company</a>
+                <a href="#capabilities" class="hover:text-vcet-light transition">Infrastructure</a>
+                <a href="#sectors" class="hover:text-vcet-light transition">Sectors</a>
+                <a href="#contact" class="hover:text-vcet-light transition">Contact</a>
+            </div>
+
+            <!-- CTA -->
+            <div>
+                <button class="bg-vcet-light hover:bg-vcet-brand text-white px-6 py-2.5 text-sm font-bold uppercase tracking-wider rounded-sm transition-colors shadow-md">
+                    Request Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (VCET Blue Vibe) -->
+    <section class="relative hero-gradient text-white py-24 overflow-hidden border-b-8 border-vcet-light">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-blue-200 font-bold tracking-widest uppercase mb-2 text-sm">High Precision Subcontracting</h2>
+                <h1 class="text-5xl md:text-6xl font-black leading-tight mb-6">
+                    ENGINEERED FOR <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-vcet-light to-blue-200">EUROPEAN PRECISION</span>
+                </h1>
+                <p class="text-lg text-blue-100 mb-8 max-w-lg leading-relaxed">
+                    Established in 2004 in Malacca, Malaysia. We specialize in high-precision mechanical parts, prototypes, and complex assemblies for global industry leaders.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="bg-vcet-light hover:bg-white hover:text-vcet-dark text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors shadow-lg">
+                        View Capacities
+                    </button>
+                    <button class="bg-transparent border border-blue-300 hover:bg-blue-800 text-white px-8 py-3 font-bold uppercase tracking-wider rounded-sm transition-colors">
+                        Our History
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quick Stats Card -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl shadow-2xl">
+                <h3 class="text-xl font-bold border-b border-white/20 pb-4 mb-6 uppercase tracking-wider">Operational Scale</h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-blue-100">MedTech Sector Focus</span>
+                            <span class="font-bold text-white">48.9%</span>
+                        </div>
+                        <div class="w-full bg-vcet-dark/50 h-2 rounded-full overflow-hidden"><div class="bg-vcet-light h-2" style="width: 48.9%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-blue-100">Export to Switzerland</span>
+                            <span class="font-bold text-white">44.8%</span>
+                        </div>
+                        <div class="w-full bg-vcet-dark/50 h-2 rounded-full overflow-hidden"><div class="bg-vcet-light h-2" style="width: 44.8%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-blue-100">Export to Rest of Europe</span>
+                            <span class="font-bold text-white">47.5%</span>
+                        </div>
+                        <div class="w-full bg-vcet-dark/50 h-2 rounded-full overflow-hidden"><div class="bg-vcet-light h-2" style="width: 47.5%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MACHINERY CAPACITIES -->
+    <section id="capabilities" class="py-20 bg-vcet-ice tech-grid">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-12 brand-border pl-6 bg-white/60 p-4 rounded-r-lg inline-block backdrop-blur-sm shadow-sm">
+                <h2 class="text-3xl font-black text-vcet-dark uppercase">Machinery Infrastructure</h2>
+                <p class="text-vcet-brand font-medium mt-1">A vast network of over 600 advanced machines ensuring unlimited production capacity.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <!-- Machine Data Cards -->
+                <div class="bg-white border border-vcet-silver p-6 text-center rounded-lg hover:border-vcet-light hover:shadow-lg transition-all transform hover:-translate-y-1">
+                    <div class="w-12 h-12 mx-auto bg-vcet-ice text-vcet-brand rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-gears text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-vcet-dark">222</h3>
+                    <p class="text-xs font-bold uppercase text-vcet-brand mt-1">CNC Milling</p>
+                    <p class="text-[10px] text-vcet-slate mt-2">3, 4 & 5-Axis</p>
+                </div>
+                <div class="bg-white border border-vcet-silver p-6 text-center rounded-lg hover:border-vcet-light hover:shadow-lg transition-all transform hover:-translate-y-1">
+                    <div class="w-12 h-12 mx-auto bg-vcet-ice text-vcet-brand rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-microscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-vcet-dark">161</h3>
+                    <p class="text-xs font-bold uppercase text-vcet-brand mt-1">CNC Grinding</p>
+                    <p class="text-[10px] text-vcet-slate mt-2">Cylindrical & Surface</p>
+                </div>
+                <div class="bg-white border border-vcet-silver p-6 text-center rounded-lg hover:border-vcet-light hover:shadow-lg transition-all transform hover:-translate-y-1">
+                    <div class="w-12 h-12 mx-auto bg-vcet-ice text-vcet-brand rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-rotate text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-vcet-dark">126</h3>
+                    <p class="text-xs font-bold uppercase text-vcet-brand mt-1">CNC Turning</p>
+                    <p class="text-[10px] text-vcet-slate mt-2">Up to 7-Axis</p>
+                </div>
+                <div class="bg-white border border-vcet-silver p-6 text-center rounded-lg hover:border-vcet-light hover:shadow-lg transition-all transform hover:-translate-y-1">
+                    <div class="w-12 h-12 mx-auto bg-vcet-ice text-vcet-brand rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-vcet-dark">60</h3>
+                    <p class="text-xs font-bold uppercase text-vcet-brand mt-1">Wire Cut</p>
+                    <p class="text-[10px] text-vcet-slate mt-2">Super Drill</p>
+                </div>
+                <div class="bg-white border border-vcet-silver p-6 text-center rounded-lg hover:border-vcet-light hover:shadow-lg transition-all transform hover:-translate-y-1">
+                    <div class="w-12 h-12 mx-auto bg-vcet-ice text-vcet-brand rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-bolt-lightning text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-vcet-dark">55</h3>
+                    <p class="text-xs font-bold uppercase text-vcet-brand mt-1">Sink EDM</p>
+                    <p class="text-[10px] text-vcet-slate mt-2">High Precision</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SECTORS & MATERIALS -->
+    <section id="sectors" class="py-20 bg-white border-t border-vcet-silver">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+            
+            <!-- Sectors -->
+            <div>
+                <div class="mb-8 brand-border pl-6">
+                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Industry Diversity</h2>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-syringe text-vcet-light w-6"></i> MedTech</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">48.9%</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-clock text-vcet-light w-6"></i> Watchmaking</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">27.2%</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-robot text-vcet-light w-6"></i> Automation</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">12.0%</span>
+                    </li>
+                    <li class="flex items-center justify-between bg-vcet-ice border border-vcet-silver p-4 rounded-md">
+                        <span class="font-bold text-vcet-dark"><i class="fa-solid fa-car text-vcet-light w-6"></i> Automotive</span>
+                        <span class="bg-white text-vcet-brand px-3 py-1 text-xs font-black border border-vcet-silver rounded-sm shadow-sm">10.2%</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Materials & Processing -->
+            <div>
+                <div class="mb-8 brand-border pl-6">
+                    <h2 class="text-2xl font-black text-vcet-dark uppercase">Material Capabilities</h2>
+                </div>
+                <div class="bg-vcet-ice border border-vcet-silver p-6 rounded-md">
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-vcet-dark">
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Titanium Grade 5</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Stainless Steel</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Tool Steel</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Aluminum</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Carbide</div>
+                        <div class="flex items-center border-b border-vcet-silver/50 pb-2"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Peek / POM / Nylon</div>
+                        <div class="flex items-center pb-1"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Brass & Bronze</div>
+                        <div class="flex items-center pb-1"><i class="fa-solid fa-check text-vcet-light mr-3 text-xs"></i> Delrin / Teflon</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-vcet-dark text-blue-200 py-12 border-t-4 border-vcet-light">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-2xl font-black tracking-tighter text-white mb-4">
+                    VC<span class="text-vcet-light">E</span>T <span class="text-sm font-normal tracking-widest uppercase text-vcet-brand ml-1">Asia Sdn Bhd</span>
+                </div>
+                <p class="text-sm leading-relaxed">Connecting Swiss precision engineering with highly efficient Malaysian manufacturing capacities.</p>
+                <p class="text-xs mt-6 text-vcet-brand">© 2004 - 2026 VCET ASIA SDN BHD. All rights reserved.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Headquarters</h4>
+                <address class="not-italic text-sm space-y-1">
+                    <p>No 6 & 8, Jalan Tasik Utama 63</p>
+                    <p>Kawasan Perindustrian Taman Tasik Utama</p>
+                    <p>75450 Ayer Keroh, Malacca</p>
+                    <p>Malaysia</p>
+                </address>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-vcet-brand pb-2 text-sm">Direct Lines</h4>
+                <ul class="text-sm space-y-3">
+                    <li class="flex items-center"><span class="bg-vcet-brand text-white text-[10px] font-bold px-2 py-1 rounded-sm mr-3 w-12 text-center">SALES</span> <a href="tel:+6062530592" class="hover:text-white transition">+60 6 2530592</a></li>
+                    <li class="flex items-center"><span class="bg-vcet-brand text-white text-[10px] font-bold px-2 py-1 rounded-sm mr-3 w-12 text-center">HR</span> <a href="tel:+60176816615" class="hover:text-white transition">+60 17 681 6615</a></li>
+                    <li class="flex items-center"><span class="bg-vcet-brand text-white text-[10px] font-bold px-2 py-1 rounded-sm mr-3 w-12 text-center">EMAIL</span> <a href="mailto:info@vcetasia.com" class="hover:text-white transition">info@vcetasia.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
